@@ -35,32 +35,7 @@ const DataInputScreen: React.FC = () => {
 
   // Function to handle form submission
   const handleSubmit = () => {
-    if (!data.trim()) {
-      Alert.alert('Error', 'Please enter the amount');
-      return;
-    }
-    // Check if a date is selected
-    if (!date) {
-      Alert.alert('Error', 'Please select a date');
-      return;
-    }
-
-    const amount = parseFloat(data); // Use parseFloat if you want to accept decimal amounts
-    // Check if amount is a number and not NaN
-    if (isNaN(amount)) {
-      Alert.alert('Error', 'Please enter a valid amount');
-      return;
-    }
-    // Handle the data here
-    console.log('Amount:', amount);
-    console.log('Date:', date.getDay());
-    const formData = {
-      amount: amount,
-      date: date.getDay(),
-    };
-    navigation.navigate('Dashboard', {formData});
-    // Reset input field or navigate to another screen upon successful submission
-    setData('');
+    // CODE HERE!
   };
 
   return (
