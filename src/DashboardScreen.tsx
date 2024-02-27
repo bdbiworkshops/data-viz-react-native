@@ -97,8 +97,8 @@ const DashboardScreen: React.FC<Props> = ({route}) => {
       <View style={DashboardStyles.chartContainer}>
         <BarChart
           data={accumulatedData}
-          width={Dimensions.get('window').width - 40}
-          height={500}
+          width={Dimensions.get('window').width - 50}
+          height={Dimensions.get('window').height - 350}
           yAxisLabel="$"
           chartConfig={{
             backgroundColor: '#F3FDF3',
